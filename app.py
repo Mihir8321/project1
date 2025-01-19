@@ -1,7 +1,3 @@
-import subprocess
-import sys
-subprocess.check_call([sys.executable, "-m", "pip", "install",'pyttsx3'])
-subprocess.check_call([sys.executable, "-m", "pip", "install",'transformers'])
 
 import streamlit as st
 from transformers import pipeline
@@ -9,7 +5,8 @@ import pyttsx3
 import base64
 import os
 import time
-
+import subprocess
+import sys
 
 
 def text_to_speech(text):
