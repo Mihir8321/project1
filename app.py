@@ -4,7 +4,11 @@ import pyttsx3
 import base64
 import os
 import time
+import subprocess
+import sys
 
+subprocess.check_call([sys.executable, "-m", "pip", "install",'pyttsx3'])
+subprocess.check_call([sys.executable, "-m", "pip", "install",'transformers'])
 def text_to_speech(text):
     """Convert text to speech and save as audio file"""
     try:
